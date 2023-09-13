@@ -14,12 +14,13 @@
     <title>Gallery</title>
 </head>
 <body>
+  <header>
     <div class="bg">
         <img  class="bgimg" src="{% static 'base/images/m_land.jpg'%}" alt="Background">
     </div>
-    <nav class="navbar margin navbar-expand-lg fixed-top ">
+    <nav class="navbar margin navbar-expand-lg ">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand fixed-top margin" href="#">
           <img src="{% static 'base/images/camera-p.png'%}" alt="Logo" width="30" height="30">
         </a>
         <div class="collapse navbar-collapse mb " id="navbarNav">
@@ -28,19 +29,15 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active clr" href="#">Features</a>
+              <a class="nav-link active clr" href="#">Follow</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" href="#">Pricing</a>
+              <a class="nav-link rtbtn active" href="/">Return</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    
-
-
-
-    
+  </header>
 </body>
 </html>
