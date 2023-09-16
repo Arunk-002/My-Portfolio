@@ -10,6 +10,7 @@ body::-webkit-scrollbar{
 }
 /* ---------------------bg------------------ */
 .bg {
+    content: block;
     position: absolute;
     top: 0;
     left: 0;

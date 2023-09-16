@@ -4,8 +4,6 @@ from base.models import Contact
 
 def Home(request):
     return render(request,'base/index.html')
-def Gallery(requst):
-    return render(requst,'base/gallery.html')
 def Contact_view(request):
     if request.method=='POST':
         name=request.POST['name']

@@ -18,26 +18,28 @@
     <div class="bg">
         <img  class="bgimg" src="{% static 'base/images/m_land.jpg'%}" alt="Background">
     </div>
-    <nav class="navbar margin navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <a class="navbar-brand fixed-top margin" href="#">
-          <img src="{% static 'base/images/camera-p.png'%}" alt="Logo" width="30" height="30">
-        </a>
-        <div class="collapse navbar-collapse mb " id="navbarNav">
-          <ul class="navbar-nav ms-auto ">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li> -->
             <li class="nav-item">
-              <a class="nav-link active clr" href="#">Follow</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link rtbtn active" href="/">Return</a>
+              <a class="nav-link" href="/">Return</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+ 
   </header>
 </body>
 </html>
