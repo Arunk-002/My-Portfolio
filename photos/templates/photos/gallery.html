@@ -40,13 +40,16 @@
               <img src="{{photo.image.url}}" class="image-thumbnail" alt="...">
               <div class="card-body">
                 <small>Category: {{photo.category.name}}</small>
-                <a href="viewpic" target="_blank" class="btn btn-outline-dark btn-sm m-1">View</a>
+                <a href="{% url 'photos:photo' photo.id %}" target="_blank" class="btn btn-outline-dark btn-sm m-1">View</a>
+               
               </div>
             </div>
           </div>
           {% empty %}
           <h3>No photos currently</h3>
           {% endfor %}
+
+          <a href="photo/1">btn</a>
 
         </div>
       </div>
