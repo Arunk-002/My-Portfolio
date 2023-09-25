@@ -22,12 +22,14 @@
             Categories
           </div>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">All</li>
+            <li class="list-group-item"><a href="/gallery/gallery">All</a></li>
             {% for category in categories %}
-            <li class="list-group-item">{{category.name}}</li>
+            <li class="list-group-item">
+              <a href="/gallery/gallery?category={{ category.name }}">{{ category.name }}</a>
+            </li>
             {% endfor %}
 
-            <a href="add" target="_blank" class="btn btn-block btn-dark">Add Photo</a>
+            <a href="add" class="btn btn-block btn-dark">Add Photo</a>
           </ul>
         </div>
       </div>

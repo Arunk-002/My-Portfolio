@@ -1,10 +1,13 @@
 from django.shortcuts import render,redirect
-from django.contrib import messages
 from photos.models import Category,Photo
 # Create your views here.
 def Gallery(request):
+    category=request.GET.get('category')
+    if category == None:
+        photos=Photo.objects.all()
+    else:
+        photos = Photo.objects.filter(category__name=category)
     categories=Category.objects.all()
-    photos=Photo.objects.all()
     context={'categories': categories,'photos':photos}
     return render(request,'photos/gallery.html',context) 
 
@@ -31,7 +34,6 @@ def addPhoto(request):
             description=data['description'],
             image=image,
         )
-        
-        
+        return redirect('/gallery/gallery')
     context={'categories': categories}
     return render(request,'photos/add.html',context) 
